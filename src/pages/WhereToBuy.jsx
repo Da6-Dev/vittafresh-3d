@@ -1,4 +1,4 @@
-export default function About() {
+export default function WhereToBuy() {
   return (
     <div style={{ padding: "100px 20px", textAlign: "center" }}>
       <h1>Onde Comprar</h1>
