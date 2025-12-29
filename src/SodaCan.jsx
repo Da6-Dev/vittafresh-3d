@@ -6,7 +6,7 @@ import * as THREE from "three";
 export function SodaCan(props) {
   const groupRef = useRef();
 
-  const textureOriginal = useTexture("/rotulo.jpg");
+  const textureOriginal = useTexture(`${import.meta.env.BASE_URL}rotulo.jpg`);
 
   // Configuração da textura (mantida igual)
   const texture = useMemo(() => {
