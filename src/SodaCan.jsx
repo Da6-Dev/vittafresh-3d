@@ -30,15 +30,15 @@ export function SodaCan(props) {
 
   // Materiais (mantidos iguais)
   const aluminumMaterial = new THREE.MeshStandardMaterial({
-    color: "#e0e0e0",
+    color: "#b8cad4",
     metalness: 0.9,
     roughness: 0.1,
   });
 
   const labelMaterial = new THREE.MeshStandardMaterial({
     map: texture,
-    metalness: 0.4,
-    roughness: 0.3,
+    metalness: 0.2,
+    roughness: 0.25,
     side: THREE.DoubleSide,
   });
 
@@ -46,10 +46,10 @@ export function SodaCan(props) {
   // Diminuí os raios e aumentei a altura principal.
   const mainRadius = 1; // Mais fina (antes era 1)
   const topRadius = 0.9; // Topo mais fino
-  const baseRadius = 0.85; // Base mais fina
+  const baseRadius = 0.9; // Base mais fina
 
   const mainHeight = 4.2; // Bem mais alta (antes era 2.6)
-  const taperHeight = 0.3; // Ombros ligeiramente mais altos
+  const taperHeight = 0.2; // Ombros ligeiramente mais altos
 
   // Cálculos automáticos baseados nas novas medidas
   const topTaperY = mainHeight / 2 + taperHeight / 2;
