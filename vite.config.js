@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite' // <--- Importe isso
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  // Tem que ter a barra antes e depois do nome
-  base: "/vittafresh-3d/", 
+  plugins: [
+    react(),
+    tailwindcss(), // <--- Adicione isso aqui
+  ],
+  base: '/vittafresh-3d/', // Mantenha sua base do GitHub Pages se já configurou
 })
